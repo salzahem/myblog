@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Coolio</title>
+</head>
+<body>
+	{% for article in feed %}
+		<a href="/articles/detail/{{article.id}}"><h1>{{article.title}}</h1></a>
+		 -<small>{{article.created}} - {{article.content}} - {{article.id}}</small>
+	{% endfor %}
+</body>
+</html>
